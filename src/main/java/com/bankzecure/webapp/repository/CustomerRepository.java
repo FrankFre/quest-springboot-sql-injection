@@ -3,7 +3,6 @@ package com.bankzecure.webapp.repository;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.Connection;
-//import java.sql.Statement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import com.bankzecure.webapp.entity.*;
@@ -36,8 +35,7 @@ public class CustomerRepository {
       
 //    resultSet = statement.executeQuery(query);
       resultSet = preparedStatement.executeQuery();  
-      
-
+    
       Customer customer = null;
 
       if (resultSet.next()) {
